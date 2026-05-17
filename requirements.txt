@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+websockets
+google-generativeai
+chromadb
+networkx
+pydantic
+python-dotenv
+aiohttp

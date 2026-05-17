@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cybersecurity SOC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>🛡️ AI SOC Agent</h1>
+                <span class="status online">System Active</span>
+            </div>
+            <div class="metrics">
+                <div class="metric">
+                    <span class="label">Events Scanned</span>
+                    <span class="value" id="events-count">0</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Threats Blocked</span>
+                    <span class="value critical" id="threats-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="panel logs-panel">
+                <h2>Real-Time Traffic Log</h2>
+                <div class="table-container">
+                    <table id="logs-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>User</th>
+                                <th>IP Address</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="logs-body">
+                            <!-- Logs will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="panel alerts-panel">
+                <h2>AI Incident Reports</h2>
+                <div id="alerts-container">
+                    <!-- Alerts will be inserted here -->
+                    <div class="empty-state">No threats detected.</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
