@@ -1,4 +1,4 @@
-const ws = new WebSocket('ws://localhost:8001/ws');
+const ws = new WebSocket('wss://cyber-soc.onrender.com/ws');
 
 const logsBody = document.getElementById('logs-body');
 const alertsContainer = document.getElementById('alerts-container');
